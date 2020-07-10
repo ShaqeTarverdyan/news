@@ -16,6 +16,7 @@ const Container = styled.div`
 
 class Articles extends React.Component {
 	state = {
+		status: '',
 		error: null
 	}
 
@@ -29,7 +30,11 @@ class Articles extends React.Component {
 		try {
 		    fetch(url)
 		      .then(res => res.json())
-		      .then(res => this.props.onArticlesChange(res.articles))
+		      .then(res => {
+		      	console.log('ress', res)
+		      	this.props.onArticlesChange(res.articles);
+		      	this.setState({status: res.status})
+		      })
 		  } catch(error) {
 		  	this.setState({error: error.message})
 		  }
@@ -46,11 +51,15 @@ class Articles extends React.Component {
 	}
 
 	render() {
+		
 		if(this.state.error) return <Container>{this.state.error}</Container>
-		if(!this.props.articles.length) return <Loader/>
+		if(this.props.articles === null) return <Loader/>
+
 		return (
 			<Container>
 				{
+					this.state.status === "ok" && this.props.articles.length === 0 ?
+					<div>Result not Found :(</div> :
 					this.props.articles.map(({ id, title, description, urlToImage }) => 
 						<Link 
 							key={id} 

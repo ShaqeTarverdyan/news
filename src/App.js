@@ -27,7 +27,7 @@ const getPositiveHash = (str) => {
 
 class App extends React.Component {
   state = {
-    articles: [],
+    articles: null,
     isOpen: false
   }
 

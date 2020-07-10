@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
 
 
-const Container = styled.form`
+const Container = styled.div`
 	display: flex;
 	height: 35px;
 	border: 1px solid lightgrey;
