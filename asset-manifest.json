@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ShaqeTarverdyan/news-app/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/ShaqeTarverdyan/news-app/static/js/main.8165eb96.chunk.js",
+    "main.js.map": "/ShaqeTarverdyan/news-app/static/js/main.8165eb96.chunk.js.map",
+    "runtime-main.js": "/ShaqeTarverdyan/news-app/static/js/runtime-main.a2fec681.js",
+    "runtime-main.js.map": "/ShaqeTarverdyan/news-app/static/js/runtime-main.a2fec681.js.map",
+    "static/js/2.91183502.chunk.js": "/ShaqeTarverdyan/news-app/static/js/2.91183502.chunk.js",
+    "static/js/2.91183502.chunk.js.map": "/ShaqeTarverdyan/news-app/static/js/2.91183502.chunk.js.map",
+    "index.html": "/ShaqeTarverdyan/news-app/index.html",
+    "precache-manifest.9a73d769b16610a8e65ce4726593e4b9.js": "/ShaqeTarverdyan/news-app/precache-manifest.9a73d769b16610a8e65ce4726593e4b9.js",
+    "service-worker.js": "/ShaqeTarverdyan/news-app/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/ShaqeTarverdyan/news-app/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.91183502.chunk.js.LICENSE.txt": "/ShaqeTarverdyan/news-app/static/js/2.91183502.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2fec681.js",
+    "static/js/2.91183502.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.8165eb96.chunk.js"
+  ]
+}
