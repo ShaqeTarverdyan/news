@@ -3,7 +3,6 @@ import Header from './components/Header';
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import Articles from './components/Articles';
 import Article from './components/Article';
-import SearchPage from './components/SearchPage';
 import PopUp from './components/PopUp';
 import Login from './components/auth/Login';
 import styled from 'styled-components';
@@ -60,8 +59,10 @@ class App extends React.Component {
           <Route
             path="/Article/:articleId"
             render={({ match }) => {
-              const article = this.state.articles.find(item => item.id.toString() === match.params.articleId);
-              if(!article) return <Redirect to="/"/>
+              const article = this.state.articles != null ? 
+                this.state.articles.find(item => item.id.toString() === match.params.articleId) :
+                null;
+              if(article == null) return <Redirect to="/"/>
               const {author, title, publishedAt, content } = article;
               return (
                 <Article 
