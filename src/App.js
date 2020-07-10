@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Articles from './components/Articles';
 import Article from './components/Article';
 import PopUp from './components/PopUp';
@@ -31,7 +31,6 @@ class App extends React.Component {
   }
 
   handleArticlesChange = (articles) => {
-    console.log('art', articles)
     const articlesWithId = articles.map(article => ({
       ...article,
       id: getPositiveHash(article.url)

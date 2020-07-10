@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import SearchInput from './SearchInput';
-import { Categories }from '../Constants';
 import { NavLink, Link } from "react-router-dom";
 import { GET_SOURCES_URL } from '../Constants.js';
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
@@ -144,7 +143,6 @@ class Header extends React.Component {
 	fillItemsInState = (items) => {
 		let count = 5;
 		let ItemsArray = [];
-		let index = 0;
 		for(let i = 0; i < count; i++) {
 			ItemsArray[i] = items[i]
 		}
@@ -201,7 +199,6 @@ class Header extends React.Component {
 	}
 
 	render() {
-		const isMobile = window.innerWidth < '768';
 		const { isOpenMenu } = this.state; 
 		const toggleIcon = isOpenMenu ? <AiOutlineUp/> : <AiOutlineDown/>;
 		return (

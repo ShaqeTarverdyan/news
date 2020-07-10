@@ -31,7 +31,6 @@ class Articles extends React.Component {
 		    fetch(url)
 		      .then(res => res.json())
 		      .then(res => {
-		      	console.log('ress', res)
 		      	this.props.onArticlesChange(res.articles);
 		      	this.setState({status: res.status})
 		      })

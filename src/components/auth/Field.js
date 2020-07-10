@@ -39,7 +39,6 @@ class Field extends React.Component {
 	}
 
 	render() {
-		console.log(this.state.error, 'error')
 		const { type, name, placeholder} = this.props;
 		return (
 			<FieldWrapper>
